@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background: rgb(219, 219, 219);
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.nav_container{
+    background: #343a40;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: black 0px 0px 10px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    border-bottom: rgb(107, 107, 107) 1px solid;
+}
+.title h1{
+    margin: 0;
+    text-align: center;
+    color: rgb(212, 212, 212);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.download_code{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download_code svg{
+    height: 30px;
+}
+.download_code a{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 10px;
+    background: #007bff;
+    border-radius: 10px;
+    width: 90%;
+    text-decoration: none;
+    color: white;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+.download_code a:hover{
+    background: #ffffff;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.nav{
+
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav span{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(212, 212, 212);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 10%;
+
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+.nav ul a svg{
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nav ul a:hover{
+    background: #ffffff;
+    color: #007bff;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 10px;
+}
+
+.panel_container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.panel{
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 10px;
+    border-radius: 10px;
+    max-height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.panel table{
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+
+
+.panel table thead tr{
+    
+    background: #343a40;
+    
+    
+    
+}
+.panel table thead tr th{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+   
+    
+}
+.panel table tbody tr td{
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.panel table tbody tr{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(175, 175, 175);
+    
+}
+
+.panel table tbody tr:nth-child(2n){
+    background: rgb(233, 233, 233);
+    color: rgb(99, 99, 99);
+}
+
+
+
+.test{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.test::-webkit-scrollbar{
+    background: none;
+    width: 0;
+}
+
+
+
+form{
+    color: white;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input[type=submit]{
+    padding: 10px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    border-radius: 10px;
+    
+    
+}
+
+
+
+input[type=submit]:hover{
+    background: #ffffff;
+    color: #007bff;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 10px;
+}
+tbody tr td a{
+    top: 15px;
+    left: 20px;
+
+    position: absolute;    
+    transition: 0.5s;
+}
+tbody tr td svg:hover{
+    color: red;
+}
+tbody tr td a svg{
+    width: 20px;
+    color: grey;
+    transition: 0.5s;
+
+}
+
+tbody tr td{
+   
+    position: relative;
+}
